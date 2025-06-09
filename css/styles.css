@@ -386,7 +386,7 @@ img {
 }
 
 .footer-wrapper-right p,
-.footer-form p {
+.footer-form-wrapper p {
   font-weight: 500;
   color: #fff;
   margin-bottom: 16px;
@@ -409,18 +409,10 @@ img {
   margin-left: auto;
 }
 
-.footer-form-wrapper p {
-  margin-bottom: 16px;
-}
-
 .footer-form {
   display: flex;
   gap: 24px;
   align-items: center;
-}
-
-.footer-field {
-  display: flex;
 }
 
 .footer-input {
@@ -448,11 +440,12 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 16px;
+  /* gap: 16px; */
 }
 
 .footer-send-icon {
   fill: #fff;
+  margin-left: 16px;
 }
 
 .backdrop {
