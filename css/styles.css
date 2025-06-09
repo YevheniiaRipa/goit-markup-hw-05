@@ -487,7 +487,7 @@ img {
   padding-top: 72px;
 }
 
-.modal-close {
+.modal-close-button {
   position: absolute;
   top: 24px;
   right: 24px;
@@ -496,19 +496,23 @@ img {
   border: 1px solid rgba(0, 0, 0, 0.1);
   width: 24px;
   height: 24px;
+  padding: 0;
+  cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-close:hover,
-.modal-close:focus {
+.modal-close-button:hover,
+.modal-close-button:focus {
   background-color: #404bbf;
   border: none;
 }
 
-.modal-close:hover .modal-close-icon {
+.modal-close-button:hover .modal-close-icon,
+.modal-close-button:focus .modal-close-icon {
   fill: #fff;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -620,8 +624,6 @@ img {
   align-items: center;
   justify-content: center;
   fill: transparent;
-  /* margin-right: 8px;
-  margin-bottom: 24px; */
 }
 
 .modal-check:checked + .modal-check-text .modal-check-element {
@@ -630,12 +632,13 @@ img {
   fill: #f4f4fd;
 }
 
-.modal-check-icon .modal-check-link {
+.modal-check-link {
   color: #4d5ae5;
   text-decoration: underline;
 }
 
 .modal-form-button.button {
   padding: 0;
-  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
